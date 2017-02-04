@@ -1,0 +1,63 @@
+	body {
+		background:#678bb3; 
+		padding:0;
+		margin:0;
+
+	}
+	
+	.sky {
+		width:100%;
+		height:1000px;
+		background: transparent url(img/sky.jpg) top left no-repeat;
+		background-size: 100% 100%;
+		margin:auto;
+		position:relative;
+	}
+	
+	.cloud {
+		width: 250px;
+		height:200px;
+		position:absolute;
+		background:transparent url(img/front_cloud.png) 0 0 no-repeat;
+		margin-top:150px;	
+		
+	}
+	
+	.fcloud01 {
+		top:100px;
+		z-index:100;
+		animation-name: drift;
+		animation-duration: 25s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+
+  	}
+			
+	.fcloud02 {
+		top:240px;
+		z-index: 200;
+		animation-name: drift;
+		animation-delay: 10s;
+		animation-duration: 35s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-fill-mode: backwards;	
+}
+
+@keyframes drift {
+	from{transform: translateX(-255px);}
+	to{transform: translateX(1200px);}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+body {
+  font-family: 'Alfa Slab One', cursive;
+  font-size:6rem;
+  background:#2c333a;
+}
+
+div {
+  width:80%;
+  margin:4rem auto;
+  text-align:center;
+  perspective: 800px;
+ }
+
+span {
+   display:inline-block;
+   margin-left: -20px;
+   color:#77c6bc;
+   transform-origin: 50% 70%
+}
+
+
+span:nth-child(2n) {
+  color:#95b8cb;
+}
+
+span:nth-child(1) {
+  animation-name: flipUp;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.68,-0.55,0.26,1.55);
+  animation-fill-mode: both;
+
+}
+
+span:nth-child(2) {
+  margin-right:30px;
+  animation-name: flipUp;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.68,-0.55,0.26,1.55);
+  animation-fill-mode: both;
+  animation-delay: .2s
+}
+
+span:nth-child(3) {
+ margin-right:30px;
+ animation-name: flipUp;
+ animation-duration: 1s;
+ animation-timing-function: cubic-bezier(0.68,-0.55,0.26,1.55);
+ animation-fill-mode: both;
+ animation-delay: .4s
+}
+
+span:nth-child(4) {
+  animation-name: flipUp;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.68,-0.55,0.26,1.55);
+  animation-fill-mode: both;
+  animation-delay: .6s
+}
+
+span:nth-child(5) {
+  margin-left:-28px;
+  animation-name: flipUp;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.68,-0.55,0.26,1.55);
+  animation-fill-mode: both;
+  animation-delay: .8s
+ }
+
+span:nth-child(6) {
+  animation-name: flipUp;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.68,-0.55,0.26,1.55);
+  animation-fill-mode: both;
+  animation-delay: 1s
+}
+
+span:nth-child(7) { 
+  animation-name: flipUp;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.68,-0.55,0.26,1.55);
+  animation-fill-mode: both;
+  animation-delay: 1.2s
+}
+
+@keyframes flipUp {
+  from{transform: rotateX(90deg);
+  }
+  to{transform: rotateX(0deg);}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+body {padding:6em; background:#fcfcfc;}
+
+.wrap {width:200px; margin:auto;  z-index:1;}
+
+.msg {
+  color: whitesmoke;
+  text-align:center;
+  font-family: 'Bree Serif', Courier, monospaced;
+  font-size:3.5em;
+  width:200px;
+  position:absolute;
+  margin:55px 0 0 2px;
+  pointer-events: none; 
+}
+
+.sticker {
+  width:200px;
+  height:200px;
+  position:absolute;
+  background: url(sticker.png) top center no-repeat; 
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+
+
+}
+
+.sticker:hover {
+  animation-play-state: running;
+}
+
+@keyframes spin {
+  0%{transform: rotate(0turn);
+  }
+  100%{transform: rotate(1turn);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
